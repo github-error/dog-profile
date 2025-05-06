@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #F2F6D0;
+    text-align: center;
+    color: #443627;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(135deg, #443627, #D98324);
+    color: white;
+    padding: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.header h1 {
+    font-size: 28px;
+}
+
+.header p {
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?dog,vet') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #D98324;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #443627;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+}
+
+.services h2 {
+    font-size: 24px;
+    color: #443627;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-box {
+    background: #EFDCAB;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.service-box i {
+    font-size: 30px;
+    color: #D98324;
+    margin-bottom: 10px;
+}
+
+.service-box h3 {
+    color: #443627;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.service-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+.footer {
+    background: #443627;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}

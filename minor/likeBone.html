@@ -1,0 +1,25 @@
+<img src="https://img.icons8.com/ios/50/000000/dog-bone.png" 
+     class="like-btn" alt="Bone" 
+     onclick="toggleLike(this)">
+
+<span class="like-count">0</span>
+
+<script>
+    function toggleLike(element) {
+        let likeCountElement = element.nextElementSibling; // Get the span next to the image
+        let currentLikes = parseInt(likeCountElement.textContent); // Get current like count
+        let isLiked = element.dataset.liked === "true"; // Check if already liked
+        
+        if (isLiked) {
+            currentLikes--; // Decrease count
+            element.src = "https://img.icons8.com/ios/50/000000/dog-bone.png"; // Unliked icon
+            element.dataset.liked = "false";
+        } else {
+            currentLikes++; // Increase count
+            element.src = "https://img.icons8.com/ios-filled/50/ff0000/dog-bone.png"; // Liked icon
+            element.dataset.liked = "true";
+        }
+
+        likeCountElement.textContent = currentLikes; // Update like count
+    }
+</script>

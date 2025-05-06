@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #F2F6D0; /* Pale Yellow */
+  color: #443627; /* Dark Brown */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+/* Dashboard Layout */
+.dashboard {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background: #704214; 
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header h2 {
+  color: #EFDCAB; /* Light Beige */
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 15px;
+}
+
+.sidebar-menu li a {
+  color: #EFDCAB; /* Light Beige */
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.sidebar-menu li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-menu li a i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+/* Sidebar general styling */
+.sidebar {
+  width: 250px;
+  background-color: #443627;
+  color: #F2F6D0;
+  padding-top: 20px;
+}
+
+.sidebar-header h2 {
+  text-align: center;
+  color: #EFDCAB;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  position: relative;
+}
+
+.sidebar-menu li a {
+  display: block;
+  color: #F2F6D0;
+  text-decoration: none;
+  padding: 12px 20px;
+  transition: background 0.3s;
+}
+
+/* Hover effect for main menu */
+.sidebar-menu li a:hover {
+  background-color: #D98324;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+  display: none; /* Initially hidden */
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  background-color: #EFDCAB; /* Light peach background */
+  position: absolute;
+  left: 100%;
+  top: 0;
+  min-width: 180px;
+  z-index: 1000;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li a {
+  display: block;
+  color: #443627; /* Dark brown text */
+  padding: 10px;
+  white-space: nowrap;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Adjust position for vertical dropdown */
+.sidebar-menu .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Top Bar Styles */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.topbar-left h1 {
+  font-size: 24px;
+  color: #D98324; /* Orange */
+}
+
+.topbar-right span {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Content Section Styles */
+.content {
+  background: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+  font-size: 20px;
+  color: #D98324; /* Orange */
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Section Boxes */
+.div1, .div2 {
+  background: #D98324; /* Orange */
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+.div3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.col1, .col2, .col3 {
+  background: #443627; /* Dark Brown */
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.col1 h4, .col2 h4, .col3 h4 {
+  color: #EFDCAB; /* Light Beige */
+  font-size: 18px;
+}
+
+.col1 p, .col2 p, .col3 p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Buttons */
+.service-button, .row3-button1, .row3-button2, .row3-button3, .more-aboutus {
+  background: #D98324; /* Orange */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.service-button:hover, .row3-button1:hover, .row3-button2:hover, .row3-button3:hover, .more-aboutus:hover {
+  background: #443627; /* Dark Brown */
+}
+
+/* About Us Section */
+.about-section {
+  background: #EFDCAB; /* Light Beige */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-h1 {
+  font-size: 24px;
+  color: #D98324; /* Orange */
+  margin-bottom: 10px;
+}
+
+.about-p {
+  font-size: 14px;
+  color: #444;
+}
+.service {
+  text-align: center; /* Centers all inner content */
+  background-color: #f8f8f8; /* Light background */
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%; /* Adjust width for better fit */
+  margin: auto; /* Centers the section */
+}
+
+.service-row1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-row2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.service-button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.service-row3 {
+  display: flex;
+  justify-content: center; /* Centers all service boxes */
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  margin-top: 15px;
+}
+
+.service-box {
+  background-color: #d38b3a;
+  padding: 12px 15px;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 200px; /* Fixed width for uniformity */
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+}
+
+.service-box a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}/*for clickable 3 options*/
+.service-row3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.service-box {
+  background-color: #D98324; /* Theme color */
+  color: #F2F6D0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-decoration: none; /* Remove underline */
+  flex: 1; /* Makes all boxes equal width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-box:hover {
+  background-color: #EFDCAB;
+  color: #443627;
+  transform: scale(1.05);
+}
+/*about us*/
+/* Remove underline from anchor tag */
+.more-aboutus {
+  display: block; /* Make it fully clickable */
+  text-decoration: none; /* Remove underline */
+  background-color: #D98324; /* Button background */
+  color: #F2F6D0; /* Button text color */
+  padding: 15px 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: fit-content;
+  margin-top: 15px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* On hover effect */
+.more-aboutus:hover {
+  background-color: #EFDCAB;
+  color: #443627;
+}
+
+/* Ensure h2 inside the button looks good */
+.aboutus-h2 {
+  margin: 0;
+  font-size: 20px;
+}
+/*share a new post*/
+/* General styles for div1 and div2 */
+.div1, .div2 {
+  display: block; /* Make the whole area clickable */
+  width: 100%; /* Cover full width */
+  text-decoration: none; /* Remove underline */
+  background-color: #D98324; /* Background color */
+  color: #F2F6D0; /* Text color */
+  padding: 15px 0; /* Padding for spacing */
+  text-align: center; /* Center text */
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.div1:hover, .div2:hover {
+  background-color: #EFDCAB;
+  color: #443627;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .div3, .service-row3, .aboutus-2 {
+    flex-direction: column;
+  }
+}

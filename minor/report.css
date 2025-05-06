@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #F2F6D0; /* Light Cream */
+}
+
+/* Main Container */
+.reports-container {
+    display: flex;
+    width: 90%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background: #443627; /* Dark Brown */
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 12px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #D98324; /* Orange */
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sidebar ul li:hover, .sidebar ul li.active {
+    background: #EFDCAB; /* Beige */
+    color: #443627; /* Dark Brown */
+}
+
+/* Content */
+.reports-content {
+    width: 80%;
+    padding: 30px;
+}
+
+/* Hide sections initially */
+.hidden {
+    display: none;
+}
+
+/* Stats Cards */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #EFDCAB; /* Beige */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+    color: #443627; /* Dark Brown */
+    font-weight: bold;
+}
+
+/* Chart */
+.chart-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

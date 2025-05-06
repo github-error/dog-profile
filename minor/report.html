@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports | Animo World</title>
+    <link rel="stylesheet" href="report.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="reports-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>📊 Reports</h2>
+            <ul>
+                <li class="active" onclick="showSection('user-reports')">User Reports</li>
+                <li onclick="showSection('dog-reports')">Dog & Cattle Reports</li>
+                <li onclick="showSection('engagement-reports')">Engagement Reports</li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="reports-content">
+            <!-- User Reports Section -->
+            <section id="user-reports" class="content-section">
+                <h2>User Reports</h2>
+                <div class="stats">
+                    <div class="card"><h3>Total Users</h3><p>15,200</p></div>
+                    <div class="card"><h3>New Signups</h3><p>1,450</p></div>
+                    <div class="card"><h3>Verified Profiles</h3><p>9,320</p></div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="userChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Dog & Cattle Reports Section -->
+            <section id="dog-reports" class="content-section hidden">
+                <h2>Dog & Cattle Reports</h2>
+                <div class="stats">
+                    <div class="card"><h3>Top Dog Breed</h3><p>Labrador</p></div>
+                    <div class="card"><h3>Top Cattle Breed</h3><p>Jersey</p></div>
+                    <div class="card"><h3>Most Liked Profile</h3><p>Max 🐶</p></div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="dogChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Engagement Reports Section -->
+            <section id="engagement-reports" class="content-section hidden">
+                <h2>Engagement Reports</h2>
+                <div class="stats">
+                    <div class="card"><h3>Total Posts</h3><p>32,540</p></div>
+                    <div class="card"><h3>Reels Watched</h3><p>1.2M</p></div>
+                    <div class="card"><h3>Total Shares</h3><p>58,900</p></div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="engagementChart"></canvas>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="report.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F2F6D0; /* Light background */
+    color: #443627;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* About Us Section */
+.about-container {
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    background: #EFDCAB; /* Soft yellowish background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h1 {
+    font-size: 32px;
+    color: #D98324; /* Dark orange as primary theme color */
+    margin-bottom: 10px;
+}
+
+.about-container span {
+    font-weight: bold;
+    color: #D98324; /* Highlight color */
+}
+
+.about-container p {
+    font-size: 18px;
+    color: #443627;
+    margin-bottom: 30px;
+}
+
+/* About Content Boxes */
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.about-box {
+    background: #D98324; /* Deep orange background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: #F2F6D0; /* Light text */
+}
+
+.about-box:hover {
+    transform: translateY(-5px);
+    background: #EFDCAB; /* Softer hover effect */
+    color: #443627;
+}
+
+.about-box i {
+    font-size: 40px;
+    color: #443627; /* Dark brown for icons */
+    margin-bottom: 10px;
+}
+
+.about-box h2 {
+    font-size: 22px;
+    color: #F2F6D0; /* Light text */
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    font-size: 16px;
+    color: #F2F6D0; /* Light text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+}

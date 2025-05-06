@@ -1,0 +1,94 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Image */
+body {
+    background: url('https://www.thesprucepets.com/thmb/nAfZqzn_BhMmJ2z2rmbGkO439xM=/4000x0/filters:no_upscale():strip_icc()/spruce-pets-200-types-of-dogs-45a7bd12aacf458cb2e77b841c41abe7.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Signup Box */
+.signup-container {
+    background: rgba(255, 255, 255, 0.1); /* Transparent Glass Effect */
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+}
+
+.signup-box h2 {
+    color: #D98324;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.signup-box p {
+    color: #EFDCAB;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+.signup-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #443627;
+    font-size: 14px;
+}
+
+/* Placeholder Styling */
+.signup-box input::placeholder {
+    color: #F2F6D0;
+}
+
+/* Button */
+.signup-box button {
+    width: 100%;
+    padding: 12px;
+    background: #D98324;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-box button:hover {
+    background: #EFDCAB;
+    color: #443627;
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #D98324;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

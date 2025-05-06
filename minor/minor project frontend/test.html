@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload in PHP</title>
+</head>
+<body>
+    <h1>Upload an Image</h1>
+    <form action="post.php" method="post" enctype="multipart/form-data">
+        Select image to upload:
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Upload Image" name="submit">
+    </form>
+
+    <h2>Uploaded Image</h2>
+    <?php
+    // Check if the file exists and display the image
+    if (isset($target_file) && file_exists($target_file)) {
+        echo "<img src='$target_file' alt='Uploaded Image' width='300'>";
+    }
+    ?>
+</body>
+</html>

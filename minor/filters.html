@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters | Animo World</title>
+    <link rel="stylesheet" href="filters.css">
+    <script defer src="filters.js"></script>
+</head>
+<body>
+
+    <div class="filters-container">
+        <h2>🔍 Filters</h2>
+        
+        <div class="filter-group">
+            <label for="animalType">Animal Type:</label>
+            <select id="animalType">
+                <option value="all">All</option>
+                <option value="dog">Dogs</option>
+                <option value="cattle">Cattle</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="popularity">Popularity:</label>
+            <select id="popularity">
+                <option value="most-liked">Most Liked</option>
+                <option value="most-shared">Most Shared</option>
+                <option value="trending">Trending</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="timeRange">Time Range:</label>
+            <select id="timeRange">
+                <option value="today">Today</option>
+                <option value="last-7-days">Last 7 Days</option>
+                <option value="last-30-days">Last 30 Days</option>
+            </select>
+        </div>
+
+        <button onclick="applyFilters()">Apply Filters</button>
+
+        <div class="results">
+            <h3>📊 Filtered Results</h3>
+            <ul id="filteredResults">
+                <li>Select filters to see results...</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

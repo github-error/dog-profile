@@ -1,0 +1,132 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #D98324, #443627); /* Orange to Dark Brown */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* User Management Container */
+.user-management-container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 750px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: 600;
+}
+
+td img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Role Styling */
+.role {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.role.admin {
+    background: #D98324; /* Orange */
+    color: white;
+    box-shadow: 0 0 8px rgba(217, 131, 36, 0.5);
+}
+
+.role.user {
+    background: #EFDCAB; /* Beige */
+    color: #443627; /* Dark Brown */
+    box-shadow: 0 0 8px rgba(239, 220, 171, 0.5);
+}
+
+/* Button Styling */
+button {
+    border: none;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+.edit-btn {
+    background: #443627; /* Dark Brown */
+    color: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.edit-btn:hover {
+    background: #2d251a;
+    transform: scale(1.1);
+}
+
+.delete-btn {
+    background: #D98324; /* Orange */
+    color: white;
+    margin-left: 6px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.delete-btn:hover {
+    background: #a6651c;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+
+    td img {
+        width: 35px;
+        height: 35px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}
